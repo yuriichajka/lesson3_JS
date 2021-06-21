@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// - створити функцію яка обчислює та повертає площу прямокутника висотою
+
+        // function square(a, b) {
+        //     return a*b
+        // }
+        // let s = square(24,54)
+        // console.log(s)
+
+// - створити функцію яка обчислює та повертає площу кола
+
+        // function square (r) {
+        //     return 3.14*(r**2);
+        // }
+        // let A = square(25);
+        // console.log(A);
+
+// - створити функцію яка обчислює та повертає площу циліндру
+
+        // function square (R, H) {
+        //     return 2*3.14*R*H;
+        // }
+        // let S = square(24, 45);
+        // console.log(S);
+
+// - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);
+
+        //   function returnMinPrintMax() {
+        //       let min = arguments[0];
+        //       let max = arguments[0];
+        //       for (const item of arguments) {
+        //           if (item > max) max = item;
+        //           if (item < min) min = item;
+        //       }
+        //       console.log(max);
+        //       return min;
+        //   }   
+        //   const min = returnMinPrintMax(2, 2, 5, 6, 7, 7, 4, 79);
+        //   console.log(min);
+
+//- Приймає масив та число "i", та міняє місцями об`єкт який знаходиться в індексі "i" на "i+1"
+//   EXAMPLE:
+//   foo([9,8,0,4], 0) // ==> [ 8, 9, 0, 4 ]
+//   foo([9,8,0,4], 1) // ==> [ 9 ,0, 8, 4 ]
+//   foo([9,8,0,4], 2) // ==> [ 9, 8, 4, 0 ]
+
+            // function changeElement(arr, index) {
+            //     let array = [...arr];
+            //     if(index < array.length - 1) {
+            //         let temp = array[index];
+            //         array[index] = array[index + 1];
+            //         array[index + 1] = temp;
+            //     }
+            //     return array;
+            // }
+            // const changeElement1 = changeElement([9, 8, 0, 4], 0);
+            // console.log(changeElement1);
+
+// - Сворити функцію яка буде переносити елементи з значенням 0 у кінець маисву. Зберігаючи при цьому порядок не нульових значень.
+// Двожина масиву від 2 до 100
+// EXAMPLE:
+// [1,0,6,0,3] => [1,6,3,0,0]
+// [0,1,2,3,4] => [1,2,3,4,0]
+// [0,0,1,0]   => [1,0,0,0]
+
+                // function zeroElement(arr) {
+                //     let zero = [];
+                //     let number = [];
+                //     for (const item of arr) {
+                //         if (item === 0) {
+                //             zero.push(0);
+                //         }else {
+                //             number.push(item);
+                //         }
+                //         }
+                //         return number.concat(zero); 
+                //         return [...number, ...zero];
+                // }
+
+                // console.log(zeroElement([0, 4, 3, 0, 3, 0]));
+
+
+                // function zeroElement(arr) {
+                //     let tempArray = [...arr];
+                //     for (let i = tempArray.length - 1; i >= 0; i--){
+                //         if (tempArray[i] === 0) {
+                //             tempArray.splice(i, 1);
+                //             tempArray.push(0);
+                //         }
+                //     }
+                //     return tempArray;
+                // }
+
+// - Дано список імен.
+let n1 = '    Harry       Potter      '
+let n2 = '    Ron       Whisley      '
+let n3 = '    Hermione       Granger      '
+// Написати функцію, яка приймає будь яке не валідне імя, та нормалізує його в наступнйи вигляд
+// let n1 = 'Harry Potter'
+// let n2 = 'Ron Whisley'
+// let n3 = 'Hermione Granger'
+
+                    function normalizeFunk (str) {
+                        let a = str.split(' ').join('');
+                        return a;
+                        
+
+                    }
+                    console.log(normalizeFunk(n1));
+                    
+                    
+            
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html> 

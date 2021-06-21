@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // let arr = [312, 132, 54, 41, 13, 654, 21, 4];
+
+// 1) створити функцію яка приймає масив та виводить його 
+
+        // function someFunction () {
+        //     for (let i = 0; i < arr.length; i++) {
+        //         console.log(arr[i])
+        //     }
+        // }
+        // someFunction(arr);
+
+// 2) створити функцію яка заповнює масив рандомними числами та виводить його. Для виведення використати попередню функцію.
+
+            // arr = [];
+            // function randomNumbers () {
+            //     for (let i = 0; i < 10; i++) {
+            //     console.log(Math.floor(Math.random()* 10))
+            //     }
+            // }
+            // randomNumbers(arr)
+
+// 3) створити функцію яка приймає три числа та виводить найменьше. (Без Math.min!)
+
+            // function someFunction (a, b, c) {
+            //     if (a > b && b > c) {
+            //         console.log(c)
+            //     } else if (a > b && c > b){
+            //         console.log (b)
+            //     } else if (b > a && a > c) {
+            //         console.log(c);
+            //     } else if (b > a && c > a) {
+            //         console.log (a)
+            //     } else if (c > a && a > b) {
+            //         console.log (b)
+            //     } else if (c > b && b > a) {
+            //         console.log (a)
+            //     }
+            // }
+            // someFunction(2, 5, 55)
+
+// 4) створити функцію яка приймає три числа та виводить найбільше. (Без Math.max!)
+
+            // function someFunction (a, b, c) {
+            //     if (a < b && b < c) {
+            //         console.log(c)
+            //     } else if (a < b && c < b){
+            //         console.log (b)
+            //     } else if (b < a && a < c) {
+            //         console.log(c);
+            //     } else if (b < a && c < a) {
+            //         console.log (a)
+            //     } else if (c < a && a < b) {
+            //         console.log (b)
+            //     } else if (c < b && b < a) {
+            //         console.log (a)
+            //     }
+            // }
+            // someFunction(2, 500, 55)
+
+// 5) створити функцію яка повертає найбільше число з масиву    
+
+                // function someFunction () {
+                //     console.log(Math.max(...arr))
+                // }
+                // someFunction(arr)
+
+                // const someFunk = (array) => {
+                //     let max = array[0];
+                //     for (const item of array) {
+                //         if (max < item) max = item;
+                //     }
+                //     return max;
+                // }
+                // const someFunk1 = someFunk([2, 3, 6, 7, 9]);
+                // console.log(someFunk1); 
+
+// 6) створити функцію яка повертає найменьше число з масиву
+            
+                // function someFunction () {
+                //     console.log(Math.min(...arr))
+                // }
+                // someFunction(arr)
+
+                // const someFunk = (array) => {
+                //     let min = array[0];
+                //     for (const item of array) {
+                //         if (min > item) min = item;
+                //     }
+                //     return min;
+                // }
+                // const someFunk1 = someFunk([2, 3, 6, 7, 9]);
+                // console.log(someFunk1); 
+
+// 7) створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його.
+
+                    // function someFunction () {
+                    // let sum = 0;
+                    // for(let i = 0; i < arr.length; i++){
+                    //     sum += arr[i];
+                    //     }
+                    // return sum;
+                    // }
+                    // let result = someFunction([6, 7, 8, 9]);
+                    // console.log(result);
+
+
+
+// 8) створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
+
+                    // function someFunction () {
+                    // let sum = 0;
+                    // for(let i = 0; i < arr.length; i++){
+                    //     sum += arr[i];
+                    //     }
+                    // return sum / arr.length;
+                    // }
+                    // let result = someFunction([2, 2, 5, 6, 7]);
+                    // console.log(result)
+
+// 9) Створити функцію яка приймає масив будь яких объектів, та повертає масив ключів всіх обєктів
+// EXAMPLE:
+// [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ name, age, model ]
+
+                    // let arr = [
+                    //     {name: 'Dima', age: 13}, 
+                    //     {model: 'Camry'}
+                    // ];
+
+
+                    // let result = [];
+                    // function someFunction(obj) {
+                    //     for (let i = 0; i < obj.length; i++) {
+                    //     result.push(Object.keys(obj[i]))
+                    // }
+                    // console.log(result.flat());
+                    // }
+                    // someFunction(arr)
+
+
+// 10)
+                    // let result = [];
+                    // function someFunction(obj) {
+                    //     for (let i = 0; i < obj.length; i++) {
+                    //     result.push(Object.values(obj[i]))
+                    // }
+                    // console.log(result.flat());
+                    // }
+                    // someFunction(arr)
+                    
+
+
+
+
+// 11) створити функцію  яка скаладає значення елементів з однаковими індексами  та повертає новий результуючий масив.
+
+                // let arr = [1, 5, 4]
+                // let arr2 = [4, 3, 2]
+                // let arr3 = arr.map(function(value, index){ 
+                //     return value + arr2[index] })
+                // console.log(arr3)
+
+                // function splitArray(array1, array2) {
+                //     let result = []
+                //     for (let i = 0; i < array1.length; i++) {
+                //         result.push(array1[i] + array2[i])
+                //     }
+                //     return result;
+                // }
+                // const split = splitArray([1, 5, 4], [4, 3, 2]);
+                // console.log(split);
+
+
+                    
+                    
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
